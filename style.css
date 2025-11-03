@@ -138,4 +138,44 @@ button{
     height: 24px;
     margin: 0 10px;
     cursor: pointer;
+
+}
+
+/* Smartphone */
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    max-width: 95vw;
+    margin: 40px auto 0 auto;
+    padding: 10px;
+  }
+  .task-list, .progress-container {
+    padding: 10px;
+    gap: 16px;
+  }
+  form {
+    flex-direction: column;
+  }
+  input, button {
+    width: 100%;
+    font-size: 20px;
+    padding: 13px;
+  }
+}
+
+/* Tablet */
+@media (481px <= width <= 1024px) {
+  .container {
+    max-width: 80vw;
+    margin: 80px auto 0 auto;
+    padding: 16px;
+  }
+  .task-list, .progress-container {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  input, button {
+    font-size: 24px;
+    padding: 12px;
+  }
 }
